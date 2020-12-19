@@ -1,65 +1,65 @@
 @font-face {
-    font-family: 'Montserrat', sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 }
-
-* {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .main-header {
-    color: rgb(199, 167, 79);
-    font-size: 50px;
-    line-height: 90px;
+  color: rgb(199, 167, 79);
+  font-size: 50px;
+  line-height: 90px;
 }
 
 .navbar {
-    min-height: 80px;
-}
-
-.navbar-brand {
-    height: 50px;
-    line-height: 50px;
-    padding: 0 15px;
+  min-height: 80px;
 }
 
 .custom-header {
-    font-weight: 700;
+  font-weight: 700;
 }
-
-.contact img {
-    width: 20px;
-    height: 20px;
-}
-
-.main-links a:visited::after {}
-
-form .btn {
-    padding: 5px 40px!important;
-}
-
 .main-links .btn {
-    padding: 5px 15px!important;
+  padding: 5px 15px !important;
+  position: relative;
 }
+.main-links .btn::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px;
+  margin: auto;
+  border: 12px solid transparent;
+  border-top-color: #338f08;
+}
+
 
 .main-links .btn:focus {
-    color: #338F08;
+  color: white;
+  background-color: #338f08;
+  margin: 5px 0;
+}
+.contact img {
+  width: 20px;
+  height: 20px;
 }
 
+form .btn {
+  padding: 5px 40px !important;
+}
 .card span {
-    padding: 0 15px;
-    color: white;
+  padding: 0 15px;
+  color: white;
 }
 
 .form-control {
-    border-radius: 0!important;
+  border-radius: 0 !important;
 }
 
 .form-control:focus {
-    box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .form-group span {
-    color: rgb(241, 2, 2);
-    margin-left: 4px;
+  color: rgb(241, 2, 2);
+  margin-left: 4px;
 }

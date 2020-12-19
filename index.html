@@ -41,10 +41,10 @@
 
 
     <!--####### Main Content ########-->
-
     <div class="container">
         <h1 class="main-header text-center mt-5 mb-4 font-weight-bold">Menyu</h1>
         <div class="main-links text-center">
+
             <a href="#Breakfast" role="button" class="btn " aria-expanded="true" aria-controls="Breakfast"
                 data-toggle="collapse">Səhər
                 Yeməyi<span class="sr-only">(current)</span></a>
@@ -78,7 +78,8 @@
                     <div class="card shadow border-0 rounded ">
                         <img src="img/img1.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class="float-right bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -91,7 +92,8 @@
                     <div class="card rounded shadow border-0 ">
                         <img src="img/img1.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class="float-right  bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -104,7 +106,8 @@
                     <div class="card  rounded shadow border-0 ">
                         <img src="img/img1.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class=" float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class=" float-right bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -126,7 +129,8 @@
                     <div class="card shadow border-0 rounded ">
                         <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class="float-right bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -139,7 +143,8 @@
                     <div class="card shadow border-0 rounded">
                         <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class="float-right  bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -152,7 +157,8 @@
                     <div class="card shadow border-0 rounded">
                         <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
+                                class="float-right  bg-success d-inline">15
                                 &#8380;</span>
                             <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
                                 bal</p>
@@ -190,23 +196,19 @@
         <div>&copy; 2020 Copyright: www.resanthotels.az</div>
     </div>
 
-    <!-- <script>
-    $('.navbar-nav>li>a').on('click', function () {
-            $('.navbar-collapse').collapse('hide');
+    <script>
+        $('.main-links > [data-toggle="collapse"]').on('click', function (e) {
+            if ($('#AccorID').find('.collapse.show')) {
+                var idx = $(this).index('[data-toggle="collapse"]');
+                console.log(idx)
+                console.log($('.collapse.show').index('.collapse'))
+                if (idx == $('.collapse.show').index('.collapse')) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+            }
         });
-</script>
- -->
-
-
-
-
-
-
-
-
-
-
-
+    </script>
 
 
 </body>
