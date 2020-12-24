@@ -8,25 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--####### Navbar ########-->
+    <!------- Navbar ------->
 
     <nav class="navbar navbar-expand-sm bg-light navbar-light shadow">
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" alt="Logo" style="width: 100px;height: 38px;">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContent"
-            aria-expanded="false" aria-label="Toggle Button" aria-controls="NavbarContent">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarContent" aria-expanded="false" aria-label="Toggle Button" aria-controls="NavbarContent">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div id="NavbarContent" class="collapse navbar-collapse">
@@ -36,81 +30,109 @@
             </ul>
         </div>
     </nav>
-    <!--####### End of Navbar ########-->
 
 
 
-    <!--####### Main Content ########-->
+    <!------- Main Content ------->
     <div class="container">
         <h1 class="main-header text-center mt-5 mb-4 font-weight-bold">Menyu</h1>
         <div class="main-links text-center">
 
-            <a href="#Breakfast" role="button" class="btn " aria-expanded="true" aria-controls="Breakfast"
-                data-toggle="collapse">Səhər
+            <a href="#Breakfast" role="button" class="btn " aria-expanded="true" aria-controls="Breakfast" data-toggle="collapse">Səhər
                 Yeməyi<span class="sr-only">(current)</span></a>
-            <a href="#Brunch" role="button" class="btn " aria-expanded="false" aria-controls="Brunch"
-                data-toggle="collapse">Qəlyanaltılar</a>
-            <a href="#Soup" role="button" class="btn " aria-expanded="false" aria-controls="Soup"
-                data-toggle="collapse">Şorbalar</a>
-            <a href="#Salads" role="button" class="btn " aria-expanded="false" aria-controls="Salads"
-                data-toggle="collapse">Salatlar</a>
-            <a href="#Sandwiches" role="button" class="btn " aria-expanded="false" aria-controls="Sandwiches"
-                data-toggle="collapse">Sendviç və Burgerlər</a>
-            <a href="#Pasta" role="button" class="btn " aria-expanded="false" aria-controls="Pasta"
-                data-toggle="collapse">Pastalar</a>
-            <a href="#Pizza" role="button" class="btn " aria-expanded="false" aria-controls="Pizza"
-                data-toggle="collapse">Pizzalar</a>
-            <a href="#Desert" role="button" class="btn " aria-expanded="false" aria-controls="Desert"
-                data-toggle="collapse">Desertlər</a>
-            <a href="#Drink" role="button" class="btn " aria-expanded="false" aria-controls="Drink"
-                data-toggle="collapse">İçkilər</a>
+            <a href="#Appetizers" role="button" class="btn " aria-expanded="false" aria-controls="Appetizers" data-toggle="collapse">Qəlyanaltılar</a>
+            <a href="#Soup" role="button" class="btn " aria-expanded="false" aria-controls="Soup" data-toggle="collapse">Şorbalar</a>
+            <a href="#Salads" role="button" class="btn " aria-expanded="false" aria-controls="Salads" data-toggle="collapse">Salatlar</a>
+            <a href="#Sandwiches" role="button" class="btn " aria-expanded="false" aria-controls="Sandwiches" data-toggle="collapse">Sendviç və Burgerlər</a>
+            <a href="#Pasta" role="button" class="btn " aria-expanded="false" aria-controls="Pasta" data-toggle="collapse">Pastalar</a>
+            <a href="#Pizza" role="button" class="btn " aria-expanded="false" aria-controls="Pizza" data-toggle="collapse">Pizzalar</a>
+            <a href="#Dessert" role="button" class="btn " aria-expanded="false" aria-controls="Dessert" data-toggle="collapse">Desertlər</a>
+            <a href="#Drink" role="button" class="btn " aria-expanded="false" aria-controls="Drink" data-toggle="collapse">İçkilər</a>
         </div>
         <div class="accordion rounded-lg my-5" id="AccorID">
 
 
-            <!--##### Card Breakfast #####-->
+            <!------ Breakfast ------->
 
             <div class=" row collapse show " aria-labelledby="" id="Breakfast" data-parent="#AccorID">
-                <div class="d-block w-100 ml-4">
-                    <h4 class="text-success custom-header">Səhər Yeməyi</h4>
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Səhər Yeməyi</h4><img src="img/icon-breakfast.png" class="ml-1 icons"></img>
                 </div>
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded">
+                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Ingilis sayağı səhər yeməyi</h6><span class="float-right bg-success d-inline">12
+                                &#8380;</span>
+                            <p>yumurta, şampinyon göbələyi, servelat kolbasası, ovçu kolbasası, lobya tomat sousunda, pomidor, tost çörəyi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded">
+                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Ingilis sayağı səhər yeməyi</h6><span class="float-right bg-success d-inline">12
+                                &#8380;</span>
+                            <p>yumurta, şampinyon göbələyi, servelat kolbasası, ovçu kolbasası, lobya tomat sousunda, pomidor, tost çörəyi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded">
+                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Ingilis sayağı səhər yeməyi</h6><span class="float-right bg-success d-inline">12
+                                &#8380;</span>
+                            <p>yumurta, şampinyon göbələyi, servelat kolbasası, ovçu kolbasası, lobya tomat sousunda, pomidor, tost çörəyi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!------- Appetizers ------->
+
+            <div class="row collapse" id="Appetizers" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Qəlyanaltılar</h4><img src="img/icon-appetizer.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
                     <div class="card shadow border-0 rounded ">
-                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class="float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right bg-success d-inline">15
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir, bal
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="   col-md-6 my-2">
-
-                    <div class="card rounded shadow border-0 ">
-                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded">
+                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right  bg-success d-inline">15
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir, bal
+                            </p>
                         </div>
                     </div>
 
                 </div>
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 col-lg-4 my-2">
 
-                    <div class="card  rounded shadow border-0 ">
-                        <img src="img/img1.png" alt="Image1" class="card-img w-100">
+                    <div class="card shadow border-0 rounded">
+                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class=" float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span class="float-right  bg-success d-inline">15
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir, bal
+                            </p>
                         </div>
                     </div>
 
@@ -118,86 +140,337 @@
 
             </div>
 
+            <!------- Soups ------->
 
-            <!--##### Card Brunch #####-->
-
-            <div class=" row collapse show " aria-labelledby="" id="Brunch" data-parent="#AccorID">
-                <div class="d-block w-100 ml-4">
-                    <h4 class="text-success custom-header">Qəlyanaltılar</h4>
+            <div class="row collapse" id="Soup" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Şorbalar</h4><img src="img/icon-soup.png" class="ml-1 icons"></img>
                 </div>
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 col-lg-4 my-2">
                     <div class="card shadow border-0 rounded ">
-                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
+                        <img src="img/img3.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class="float-right bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Qaymaqlı krevet şorbası</h6><span class="float-right bg-success d-inline">7
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>krevet, qarğıdalı, kartof, soğan, qaymaq</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="   col-md-6 my-2">
-
-                    <div class="card shadow border-0 rounded">
-                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img3.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Qaymaqlı krevet şorbası</h6><span class="float-right bg-success d-inline">7
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>krevet, qarğıdalı, kartof, soğan, qaymaq</p>
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md-6 my-2">
-
-                    <div class="card shadow border-0 rounded">
-                        <img src="img/img2.png" alt="Image1" class="card-img w-100">
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img3.png" alt="Image1" class="card-img w-100">
                         <div class="card-body">
-                            <h6 class="d-inline font-weight-bold">Avropa pendir çeşidləri</h6><span
-                                class="float-right  bg-success d-inline">15
+                            <h6 class="d-inline font-weight-bold">Qaymaqlı krevet şorbası</h6><span class="float-right bg-success d-inline">7
                                 &#8380;</span>
-                            <p>Holand pendiri, saçaqlı pendir, çedar pendiri, ağ pendir, hisə verilmiş pendir,
-                                bal</p>
+                            <p>krevet, qarğıdalı, kartof, soğan, qaymaq</p>
                         </div>
                     </div>
-
                 </div>
 
             </div>
+            <!------- Salads ------->
+
+            <div class="row collapse" id="Salads" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Salatlar</h4><img src="img/icon-salad.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img4.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Yunan salatı</h6><span class="float-right bg-success d-inline">7
+                                &#8380;</span>
+                            <p>pomidor, xiyar, rəngli bibər, feta pendiri, qara zeytun, parmesan, kahı, ağ reyhan sousu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img4.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Yunan salatı</h6><span class="float-right bg-success d-inline">7
+                                &#8380;</span>
+                            <p>pomidor, xiyar, rəngli bibər, feta pendiri, qara zeytun, parmesan, kahı, ağ reyhan sousu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img4.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Yunan salatı</h6><span class="float-right bg-success d-inline">7
+                                &#8380;</span>
+                            <p>pomidor, xiyar, rəngli bibər, feta pendiri, qara zeytun, parmesan, kahı, ağ reyhan sousu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!------- Sandwiches ------->
+
+            <div class="row collapse" id="Sandwiches" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Sendviç və burgerlər</h4><img src="img/icon-burger.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img5.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Çizburger</h6><span class="float-right bg-success d-inline">14
+                                &#8380;</span>
+                            <p>burger çörəyi, burger əti, pomidor, xiyar turşusu, qırmızı soğan, kahı, çedar pendiri, kartof fri, ketçup, mayonez</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img5.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Çizburger</h6><span class="float-right bg-success d-inline">14
+                                &#8380;</span>
+                            <p>burger çörəyi, burger əti, pomidor, xiyar turşusu, qırmızı soğan, kahı, çedar pendiri, kartof fri, ketçup, mayonez</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img5.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Çizburger</h6><span class="float-right bg-success d-inline">14
+                                &#8380;</span>
+                            <p>burger çörəyi, burger əti, pomidor, xiyar turşusu, qırmızı soğan, kahı, çedar pendiri, kartof fri, ketçup, mayonez</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!------- Pasta ------->
+
+            <div class="row collapse" id="Pasta" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Pastalar</h4><img src="img/icon-pasta.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img6.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Penne pendir sousu ilə</h6><span class="float-right bg-success d-inline">10
+                                &#8380;</span>
+                            <p>penne pastası, parmezan pendiri, gorgonzola pendiri, mozzarella, holland pendiri, qaymaq
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img6.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Penne pendir sousu ilə</h6><span class="float-right bg-success d-inline">10
+                                &#8380;</span>
+                            <p>penne pastası, parmezan pendiri, gorgonzola pendiri, mozzarella, holland pendiri, qaymaq
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img6.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Penne pendir sousu ilə</h6><span class="float-right bg-success d-inline">10
+                                &#8380;</span>
+                            <p>penne pastası, parmezan pendiri, gorgonzola pendiri, mozzarella, holland pendiri, qaymaq
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!------- Pizza ------->
+
+            <div class="row collapse" id="Pizza" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Pizzalar</h4><img src="img/icon-pizza.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img7.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Marqarita</h6><span class="float-right bg-success d-inline">9
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img7.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Marqarita</h6><span class="float-right bg-success d-inline">9
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img7.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Marqarita</h6><span class="float-right bg-success d-inline">9
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!------- Dessert ------->
+
+            <div class="row collapse" id="Dessert" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Desertlər</h4><img src="img/icon-dessert.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img8.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Black Forest</h6><span class="float-right bg-success d-inline">7.50
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img8.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Black Forest</h6><span class="float-right bg-success d-inline">7.50
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img8.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <h6 class="d-inline font-weight-bold">Black Forest</h6><span class="float-right bg-success d-inline">7.50
+                                &#8380;</span>
+                            <p>pizza pomidor sousu, mozzarella, pizza xəmiri</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!------- Drink ------->
+
+            <div class="row collapse" id="Drink" data-parent="#AccorID">
+                <div class="d-flex align-items-center w-100 ml-4">
+                    <h4 class="text-success custom-header">Sərinləşdirici içkilər</h4><img src="img/icon-drink.png" class="ml-1 icons"></img>
+                </div>
+                <div class="col-md-6 col-lg-4 my-2">
+                    <div class="card shadow border-0 rounded ">
+                        <img src="img/img9.png" alt="Image1" class="card-img w-100">
+                        <div class="card-body">
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Qazsız və ya qazlı su</h6><span class="float-right text-success d-inline">4
+                                &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Tonik su</h6><span class="float-right text-success d-inline">5
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Gürcüstan limonadı</h6><span class="float-right text-success d-inline">4
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Kompot</h6><span class="float-right text-success d-inline">5
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Ayran</h6><span class="float-right text-success d-inline">2
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Cola/Fanta/Sprite/Ice tea</h6><span class="float-right text-success d-inline">3
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Evsayağı limonad</h6><span class="float-right text-success d-inline">6
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Meyvə şirəsi</h6><span class="float-right text-success d-inline">2.50
+                                    &#8380;</span>
+                            </div>
+                            <div class="my-2">
+                                <h6 class="d-inline font-weight-bold">Red Bull</h6><span class="float-right text-success d-inline">7
+                                    &#8380;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
+
     </div>
-    <!--##### End of Main Content ########-->
+    </div>
 
 
 
-    <!--##### Footer ####-->
+
+    <!------ Footer ------>
     <div class=" footer bg-light text-center  py-3">
         <div>
             <ul class="list-unstyled">
-                <li class="list-inline-item"><a href="#">
+                <li class="list-inline-item">
+                    <a href="#">
                         <i class="fab fa-facebook-f" style="color: #686B6B;"></i>
-                    </a></li>
-                <li class="list-inline-item"><a href="#">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
                         <i class="fab fa-linkedin" aria-hidden="true" style="color: #686B6B;"></i>
-                    </a></li>
-                <li class="list-inline-item"><a href="#">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
                         <i class="fab fa-instagram" style="color: #686B6B;"></i>
-                    </a></li>
-                <li class="list-inline-item"><a href="#">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">
                         <i class="fab fa-youtube" style="color: #686B6B;"></i>
-                    </a></li>
+                    </a>
+                </li>
             </ul>
         </div>
         <div>&copy; 2020 Copyright: www.resanthotels.az</div>
     </div>
 
     <script>
-        $('.main-links > [data-toggle="collapse"]').on('click', function (e) {
+        $('.main-links > [data-toggle="collapse"]').on('click', function(e) {
             if ($('#AccorID').find('.collapse.show')) {
                 var idx = $(this).index('[data-toggle="collapse"]');
                 console.log(idx)

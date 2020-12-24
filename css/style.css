@@ -1,65 +1,92 @@
-@font-face {
-  font-family: "Montserrat", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
-}
-.main-header {
-  color: rgb(199, 167, 79);
-  font-size: 50px;
-  line-height: 90px;
-}
-
-.navbar {
-  min-height: 80px;
-}
-
-.custom-header {
-  font-weight: 700;
-}
-.main-links .btn {
-  padding: 5px 15px !important;
-  position: relative;
-}
-.main-links .btn::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 35px;
-  margin: auto;
-  border: 12px solid transparent;
-  border-top-color: #338f08;
-}
-
-
-.main-links .btn:focus {
-  color: white;
-  background-color: #338f08;
-  margin: 5px 0;
-}
-.contact img {
-  width: 20px;
-  height: 20px;
-}
-
-form .btn {
-  padding: 5px 40px !important;
-}
-.card span {
-  padding: 0 15px;
-  color: white;
-}
-
-.form-control {
-  border-radius: 0 !important;
-}
-
-.form-control:focus {
-  box-shadow: none !important;
-}
-
-.form-group span {
-  color: rgb(241, 2, 2);
-  margin-left: 4px;
-}
+    @font-face {
+        font-family: "Montserrat", sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+    }
+    
+    .navbar {
+        min-height: 80px;
+    }
+    /*------- Main Content -------*/
+    
+    .main-header {
+        color: rgb(199, 167, 79);
+        font-size: 50px;
+        line-height: 90px;
+    }
+    
+    .custom-header {
+        font-weight: 700;
+    }
+    
+    .main-links .btn {
+        padding: 5px 15px !important;
+        position: relative;
+    }
+    
+    .main-links .btn::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 35px;
+        margin: auto;
+        border: 12px solid transparent;
+        border-top-color: #338f08;
+        visibility: hidden;
+    }
+    
+    .main-links .btn:focus .btn::before {
+        visibility: visible;
+    }
+    
+    .main-links .btn:focus {
+        color: white;
+        background-color: #338f08;
+        margin: 5px 0;
+    }
+    
+    .icons {
+        width: 30px;
+        height: 30px;
+        margin-top: -8px;
+    }
+    
+    .card span {
+        padding: 0 15px;
+        color: white;
+    }
+    
+    #Drink .card {
+        position: relative;
+    }
+    
+    #Drink span {
+        text-align: center!important;
+        position: absolute;
+        right: 1%;
+    }
+    /*----- contact.html ------*/
+    
+    .contact img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    form .btn {
+        padding: 5px 40px !important;
+    }
+    
+    .form-control {
+        border-radius: 0 !important;
+    }
+    
+    .form-control:focus {
+        box-shadow: none !important;
+    }
+    
+    .form-group span {
+        color: rgb(241, 2, 2);
+        margin-left: 4px;
+    }
